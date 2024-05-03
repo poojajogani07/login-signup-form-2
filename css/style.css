@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap');
+/* font-family: 'Zen Maru Gothic', serif; */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+font-family: 'Poppins', sans-serif; */
+
+
+/* @font-face {
+    font-display: swap; 
+    font-family: 'Zen Maru Gothic';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/zen-maru-gothic-v16-latin-500.eot');
+    src: url('../fonts/zen-maru-gothic-v16-latin-500.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/zen-maru-gothic-v16-latin-500.woff2') format('woff2'), 
+         url('../fonts/zen-maru-gothic-v16-latin-500.woff') format('woff'),
+         url('../fonts/zen-maru-gothic-v16-latin-500.ttf') format('truetype'),
+         url('../fonts/zen-maru-gothic-v16-latin-500.svg#ZenMaruGothic') format('svg');
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: 'Zen Maru Gothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/zen-maru-gothic-v16-latin-700.eot'); 
+    src: url('../fonts/zen-maru-gothic-v16-latin-700.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/zen-maru-gothic-v16-latin-700.woff2') format('woff2'), 
+         url('../fonts/zen-maru-gothic-v16-latin-700.woff') format('woff'),
+         url('../fonts/zen-maru-gothic-v16-latin-700.ttf') format('truetype'),
+         url('../fonts/zen-maru-gothic-v16-latin-700.svg#ZenMaruGothic') format('svg'); 
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: 'Zen Maru Gothic';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/zen-maru-gothic-v16-latin-900.eot'); 
+    src: url('../fonts/zen-maru-gothic-v16-latin-900.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/zen-maru-gothic-v16-latin-900.woff2') format('woff2'), 
+         url('../fonts/zen-maru-gothic-v16-latin-900.woff') format('woff'), 
+         url('../fonts/zen-maru-gothic-v16-latin-900.ttf') format('truetype'),
+         url('../fonts/zen-maru-gothic-v16-latin-900.svg#ZenMaruGothic') format('svg');
+  }
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Zen Maru Gothic';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/zen-maru-gothic-v16-latin-500.eot');
+  src: url('../fonts/zen-maru-gothic-v16-latin-500.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/zen-maru-gothic-v16-latin-500.woff2') format('woff2'), 
+       url('../fonts/zen-maru-gothic-v16-latin-500.woff') format('woff'), 
+       url('../fonts/zen-maru-gothic-v16-latin-500.ttf') format('truetype'), 
+       url('../fonts/zen-maru-gothic-v16-latin-500.svg#ZenMaruGothic') format('svg');
+} */
+
+  /* poppins-regular - latin */
+@font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'); 
+  }
+  /* poppins-500 - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2'); 
+  }
+  /* poppins-600 - latin */
+  @font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'); 
+  }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+body{
+  background-color: rgb(232, 190, 113, 0.5);
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.form_content{
+  display: grid;
+  grid-template-columns: repeat(2,53%);
+}
+.frm_box{
+    height: 650px;
+    width: 65%;
+    background: url(../img/b6.jpg);
+    background-size: cover;
+    /* background-attachment: fixed; */
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0px 15px 30px rgb(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+}
+.main_form{
+  height: 490px;
+  width: 89%;
+  background-color: rgb(248, 247, 239, 30%);
+  border-radius: 12px;
+}
+.left_form{
+  padding: 30px 50px;
+}
+/* .img{
+  margin-top: 50px;
+  margin-left: -50px;
+  transition: .5s;
+  transform: translateY(100px);
+  opacity: 0;
+}
+body:hover .img{
+  transform: translateY(0px);
+  opacity: 1;
+} */
+.main_title{
+  font-family: 'Zen Maru Gothic';
+  font-weight: 900;
+}
+.right_form{
+  padding: 100px 60px 0 80px;
+  transition-delay: 9s;
+  transition: .6s;
+}
+
+.welcome_title{
+  font-family: 'Zen Maru Gothic', serif;
+  color: #2B2925;
+  font-weight: 900;
+  font-size: 35px;
+  margin-bottom: 20px;
+  padding: 0 30px;
+}
+.text{
+  width: 100%;
+  font-family: 'Poppins';
+  color: #a5a29c;
+  font-size: 10px;
+  letter-spacing: .1;
+}
+.input_box{
+  outline: none;
+  width: 75%;
+  padding: 6px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  border: none;
+  border: 2px solid #818181;
+  &::placeholder{
+    color:#aba7a1 ;
+  }
+  &:focus{
+    color:#aba7a1;
+  }
+}
+.input_group{
+  position: relative;
+
+}
+.forgot_pass a{
+  font-family: 'Poppins';
+  color: #5e5e5e;
+  font-size: 9px;
+  letter-spacing: .1;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+.list_style{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  font-weight: 600;
+  padding-right: 5px;
+}
+.icon{
+  position: absolute;
+  top: 29px;
+  right: 95px;
+  font-size: 12px;
+  color: #909090;
+
+}
+.input_boxs{
+  outline: none;
+  width: 75%;
+  padding: 6px;
+  border-radius: 8px;
+  margin-bottom: 11px;
+  border: none;
+  border: 2px solid #818181;
+  &::placeholder{
+    color:#aba7a1 ;
+  }
+  &:focus{
+    color:#aba7a1;
+  }
+}
+.login_box{
+  font-family: 'Poppins';
+  outline: none;
+  width: 100%;
+  padding: 7px;
+  border-radius: 8px;
+  margin-bottom: 1px;
+  font-weight: 600;
+  font-size: 11px;
+  padding-left: 27px;
+  border: none;
+  color: #4e4c48;
+  border: 2px solid #818181;
+  cursor: pointer;
+}
+.google_box{
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  color: #5b5a58;
+  font-size: 14px;
+}
+.signin_box{
+  text-align: center;
+  width: 100%;
+  padding: 9.3px 25px;
+  border-radius: 8px;
+  background-color: #2b2925;
+  border: none;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  transition: .3s;
+  &:hover{
+    background-color: #0b0a0a;
+  }
+}
+.list_styles{
+  display: flex;
+}
+.sign_box{
+  padding-left: 13px;
+}
+.signup_title{
+  padding-left: 70px;
+}
+.signup_title span{
+  font-family: 'Poppins';
+  font-size: 8px;
+  font-weight: 600;
+  color: #797876;
+}
+.signup_title a{
+  font-family: 'Poppins';
+  font-size: 8px;
+  font-weight: 600;
+  color: #5b5b5b;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+
+/* registration form */
+
+.imgs{
+  margin-top: 50px;
+  margin-left: -50px;
+}
+.right_forms{
+  padding: 80px 60px 0 80px;
+  transition: .3s;
+}
+.icons{
+  position: absolute;
+  top: 24.5px;
+  right: 95px;
+  font-size: 12px;
+  color: #909090;
+}
+.input_boxes{
+  outline: none;
+  width: 75%;
+  padding: 6px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: none;
+  border: 2px solid #818181;
+  &::placeholder{
+    color:#aba7a1 ;
+  }
+  &:focus{
+    color:#aba7a1;
+  }
+}
+.signup_titles{
+  padding-left: 55px;
+}
+.signup_titles span{
+  font-family: 'Poppins';
+  font-size: 8px;
+  font-weight: 600;
+  color: #797876;
+}
+.signup_titles a{
+  font-family: 'Poppins';
+  font-size: 8px;
+  font-weight: 600;
+  color: #5b5b5b;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+
+        
